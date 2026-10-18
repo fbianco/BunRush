@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bun Rush</title>
+  <meta name="author" content="Bianco's Labs">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main id="layout">
+    <section id="stage">
+      <canvas id="game" tabindex="0" aria-label="Bun Rush game screen"></canvas>
+    </section>
+
+    <aside id="cam-panel">
+      <h2>BODY CONTROL</h2>
+      <div id="cam-wrap">
+        <video id="cam" playsinline muted></video>
+        <canvas id="cam-overlay"></canvas>
+      </div>
+      <p id="cam-status">Camera off</p>
+      <div id="pills">
+        <span id="pill-left" class="pill">&#9664; LEFT</span>
+        <span id="pill-right" class="pill">RIGHT &#9654;</span>
+        <span id="pill-up" class="pill">&#9650; CLIMB</span>
+        <span id="pill-down" class="pill">&#9660; DOWN</span>
+        <span id="pill-pepper" class="pill wide">&#10033; PEPPER</span>
+      </div>
+      <dl id="help">
+        <dt>Left / right arm out</dt><dd>walk to next ladder</dd>
+        <dt>Both hands up</dt><dd>climb up</dd>
+        <dt>Squat</dt><dd>climb down</dd>
+        <dt>Both arms one side</dt><dd>pepper that way</dd>
+      </dl>
+      <p id="keys">Keys: arrows move &middot; Space pepper &middot; Enter start &middot; P pause &middot; C recalibrate &middot; M mute &middot; V hide panel</p>
+    </aside>
+  </main>
+
+  <div id="boot">
+    <div class="boot-card">
+      <h1>BUN RUSH</h1>
+      <p>Stand about 2 metres from your webcam so it sees you from head to hips.</p>
+      <button id="boot-btn" type="button">CLICK TO START</button>
+      <p class="small">The browser will ask to use your camera. Video never leaves this computer.</p>
+      <p class="small credit">Bianco's Labs</p>
+    </div>
+  </div>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

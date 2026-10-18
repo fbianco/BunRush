@@ -1,0 +1,12 @@
+{
+  "name": "bun-rush",
+  "version": "1.0.0",
+  "description": "Body-controlled burger-stacking arcade game (webcam + MediaPipe Pose). Bianco's Labs.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "node --test \"tests/*.test.mjs\""
+  },
+  "author": "Bianco's Labs",
+  "license": "GPL-3.0-or-later"
+}
